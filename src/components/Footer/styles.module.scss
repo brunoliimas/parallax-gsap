@@ -4,12 +4,28 @@
     align-items: center;
     height: 100vh;
     &__div{
-        font-size: 70px;
+        font-size: 60px;
         letter-spacing: 15px;
         color: var(--primary-color);
         text-transform: uppercase;
         span{
             display: inline-block;
+        }
+    }
+}
+@media only screen and (max-width: 768px) {
+    .footer{
+        &__div{
+            font-size: 35px;
+        }
+    }
+}
+@media only screen and (max-width: 425px) {
+    .footer{
+        display: flex;
+        flex-direction: column;
+        &__div{
+            font-size: 28px;
         }
     }
 }

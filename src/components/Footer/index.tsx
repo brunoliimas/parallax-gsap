@@ -17,7 +17,7 @@ export default function Footer() {
         };
         const arrowRefs = document.querySelectorAll(`.${styles.footer__div} span`);
         console.log(arrowRefs);
-        
+
 
         arrowRefs.forEach((arrowRef) => {
             gsap.from(arrowRef, {
@@ -28,19 +28,25 @@ export default function Footer() {
     }, []);
 
     return (
-        <footer ref={containerRef} className={styles.footer}>
-            <div className={styles.footer__div}>
-                <span data-speed="200">b</span>
-                <span data-speed="-400">r</span>
-                <span data-speed="250">u</span>
-                <span data-speed="-300">n</span>
-                <span data-speed="270">o</span>
-                <span data-speed="-50">_</span>
-                <span data-speed="150">l</span>
-                <span data-speed="-200">i</span>
-                <span data-speed="300">m</span>
-                <span data-speed="-400">a</span>
-            </div>
+        <footer ref={containerRef}>
+            <a className={styles.footer} href="http://" target="_blank" rel="noopener noreferrer">
+                <div className={styles.footer__div}>
+                    <span data-speed="-100">@</span>
+                    <span data-speed="200">b</span>
+                    <span data-speed="-400">r</span>
+                    <span data-speed="250">u</span>
+                    <span data-speed="-300">n</span>
+                    <span data-speed="170">o</span>
+                </div>
+                <div className={styles.footer__div}>
+                    <span data-speed="-100">l</span>
+                    <span data-speed="150">i</span>
+                    <span data-speed="-200">i</span>
+                    <span data-speed="300">m</span>
+                    <span data-speed="-400">a</span>
+                    <span data-speed="400">s</span>
+                </div>
+            </a>
         </footer>
     );
 }

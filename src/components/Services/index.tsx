@@ -25,10 +25,10 @@ export default function Services() {
     }, []);
 
     const servicesData = [
-        { speed: "350", text: "/Graphic Design" },
-        { speed: "500", text: "/UX/UI Design" },
-        { speed: "550", text: "/Web Design" },
-        { speed: "450", text: "/Brand Design" },
+        { speed: "150", text: "/Graphic Design" },
+        { speed: "280", text: "/UX/UI Design" },
+        { speed: "270", text: "/Web Design" },
+        { speed: "250", text: "/Brand Design" },
     ];
 
     return (
